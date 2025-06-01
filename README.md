@@ -10,13 +10,13 @@ Write a C program to read 3 characters one by one and print the characters in a 
 4.	End the program.
 
 ## PROGRAM:
-#include <stdio.h>
-int main(){
-    char a,b,c;
-    scanf("%c%c%c",&a,&b,&c);
-    printf("The reverse of %c%c%c is %c%c%c",a,b,c,c,b,a);
-    return 0;  
-}
+	#include <stdio.h>
+	int main(){
+	    char a,b,c;
+	    scanf("%c%c%c",&a,&b,&c);
+	    printf("The reverse of %c%c%c is %c%c%c",a,b,c,c,b,a);
+	    return 0;  
+	}
 ## OUTPUT:
 
 ![Screenshot 2025-06-01 115218](https://github.com/user-attachments/assets/94b69a17-e6a7-4f0c-81d4-cfb1e67c40b2)
