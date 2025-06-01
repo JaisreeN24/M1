@@ -39,19 +39,25 @@ Write a C program to read A values and check whether A is positive number or not
 3.	Check if the value of A is greater than zero.
 4.	If A is greater than zero, print a message indicating that it's a positive number. 
 5.	Otherwise, print a message indicating that it's not a positive number.
-6.End the program.
+6.	End the program.
 
 # PROGRAM:
-
+	#include <stdio.h>
+	int main()
+	{
+	int a ;
+	scanf("%d",&a);
+	if (a>=0){
+	printf("Number is positive.");
+	}
+	else{
+	printf("Number is negative.");
+	}
+	return 0;
+	}
 # OUTPUT:
 
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/ea7b170e-59de-4ee4-95a9-ec7d993e5a87)
 
 
 
