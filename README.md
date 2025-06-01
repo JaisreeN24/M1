@@ -82,9 +82,17 @@ Write a program to find minimum between two fraction numbers using conditional o
 7.	Print the minimum value.
 
 ## PROGRAM:
-
+	#include <stdio.h>
+	int main() {
+	    float a, b;
+	    scanf("%f%f", &a, &b);
+	    float min = (a < b) ? a : b;
+	    printf("%f", min);
+	    return 0;
+	}
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/4ddd9a00-4d76-45f2-b432-8e56d6c670bd)
 
 
 
@@ -113,8 +121,16 @@ Write a C program to check whether the input value is equal to 1 using simple if
 6.	End the program.
 
 ## PROGRAM:
+	#include <stdio.h>
+	int main() {
+	    int num;
+	    scanf("%d", &num);
+	    if (num == 1) printf("Equal to 1");
+	    return 0;
+	}
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/c3ab66dd-c3c9-4680-8c89-e67b327f4a22)
 
 
 
@@ -149,8 +165,20 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 9.	Else: Print “Division = Fail”
 10.	End
 ## PROGRAM:
-
+	#include <stdio.h>
+	int main() {
+	    float m1, m2, m3, total, per;
+	    scanf("%f%f%f", &m1, &m2, &m3);
+	    total = m1 + m2 + m3;
+	    per = total / 3;
+	    if (per >= 60 && m1 >= 40 && m2 >= 40 && m3 >= 40) printf("First Division");
+	    else if (per >= 50 && m1 >= 40 && m2 >= 40 && m3 >= 40) printf("Second Division");
+	    else if (per >= 40 && m1 >= 40 && m2 >= 40 && m3 >= 40) printf("Pass");
+	    else printf("Fail");
+	    return 0;
+	}
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/51bc350a-7580-487b-8aa4-97b68ab6a250)
 
 ## RESULT:
 The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
